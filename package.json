@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "utf8": "^3.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "yt-dlp",
+  "version": "1.0.0",
+  "description": "Server to host video files which will be downloaded upon HTTP request.",
+  "main": "server.js",
+  "author": "Ainan Kashif 2024",
+  "license": "ISC"
+}
