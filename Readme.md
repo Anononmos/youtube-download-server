@@ -62,5 +62,5 @@ There are two variables of this kind:
 
 | Variable | Description |
 |----------|-------------|
-DOWNLOAD | The command that downloads the YouTube video based on the specified URL and resolution. <br> For yt-dlp, the command is: ```yt-dlp -S res:$0 -P $1 "$2"``` with the first parameter being the resolution, the second parameter being the Linux-style directory to save downloaded videos, and the third parameter is the video's URL.
+```DOWNLOAD``` | The command that downloads the YouTube video based on the specified URL and resolution. <br> For yt-dlp, the command is: ```yt-dlp -S res:$0 -P $1 "$2"``` with the first parameter being the resolution, the second parameter being the Linux-style directory to save downloaded videos, and the third parameter is the video's URL.
 ```Search``` | The command that searches downloaded YouTube videos on the server which contain the same ID as found in the YouTube URL.
