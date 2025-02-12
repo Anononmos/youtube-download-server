@@ -58,6 +58,26 @@ Above, the ```$0``` is the first argument for the command while ```$1``` is the 
 
 ```format_command``` returns the formatted command as a list by splitting the string along its spaces, excluding spaces that are enclosed by double quotes.
 
+### <strong>Important!</strong>
+
+If using a custom command with parameters, you must update the ```params``` parameter in the calls to the ```format_command``` function. That means updating the following code segments: 
+
+Lines 46-48 in ```sh.js```:
+
+```javascript
+const downloader = process.env.DOWNLOAD
+const output_dir = process.env.OUTPUT
+const [cmd, ...params] = format_command(downloader, [res, output_dir, url])
+```
+
+Lines 80-82 in ```sh.js```:
+
+```javascript
+const searcher = process.env.SEARCH
+const dir = process.env.DIR
+const [cmd, ...params] = format_command(searcher, [dir, id])
+```
+
 There are two variables of this kind:
 
 | Variable | Description |
